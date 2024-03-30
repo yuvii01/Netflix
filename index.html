@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+      *{
+        font-family: sans-serif;
+      }
+      .video{
+        position: absolute;
+        top: 150px;
+        right: 300px;
+        
+      }
+      .video1{
+        /* z-index: -100 !important; */
+      }
+      .video2{
+        position: absolute;
+        top: 100px;
+        left: 900px;
+      }
+      #controller{
+        /* z-index: -100 !important; */
+      }
+      ul{
+        list-style-type: none;
+      }
+      a{
+        text-decoration: underline;
+      }
+
+      .hehe{
+        height: 0px;
+        overflow: hidden;
+        transform: scale(0);
+        transition: 1s !important;
+        transform-origin: top;
+        background: #121212 !important;
+      }
+      .open{
+        height: auto !important;
+        transform: scale(1) !important;
+        overflow: hidden !important ;
+        
+        transform-origin: top;
+      }
+
+      .rotate{
+        transform: rotate(45deg);
+      }
+      .height{
+        overflow:visible !important;
+        padding: 10px!important;
+        padding-bottom: 100px !important;
+      
+      }
+      .twist{
+        transform: rotateZ(45deg);
+      }
+      .chick{
+        padding-top: 20px !important;
+    padding-bottom: 20px !important;
+      }
+      .cont{
+        border: none!important;
+      }
+    </style>
+    <link rel="stylesheet" href="responsive.css">
+    <title>Document</title>
+  </head>
+  <body>
+    
+  
+  <div class="container-[1240px]">
+ 
+    <div
+      class=" h-auto bg-[url('https://assets.nflxext.com/ffe/siteui/vlv3/ca6a7616-0acb-4bc5-be25-c4deef0419a7/c5af601a-6657-4531-8f82-22e629a3795e/IN-en-20231211-popsignuptwoweeks-perspective_alpha_website_large.jpg')] bg-center border-t-4 border-b-4 border-gray-900 "
+    >
+      <div class="  bg-[#00000099] pb-[150px] ">
+        <div class="columns-2">
+          <div class="text-center ps-36">
+            <div>
+              <img src="/580b57fcd9996e24bc43c529.png" alt="" class="h-28" />
+            </div>
+          </div>
+          <div class="text-center pt-8 mx-auto">
+            <span class="text-center mx-auto">
+              <select
+                name=""
+                id=""
+                class="border border-gray-600 bg-[black] text-[white] h-10 w-32 rounded"
+              >
+                <option value="" class="h-8 w-40">English</option>
+                <option value="">Hindi</option>
+              </select>
+              <button class="bg-[red] text-[white] h-8 w-24 rounded ms-4">
+                Sign in
+              </button>
+            </span>
+          </div>
+        </div>
+        <div class="text-[white] text-center pt-40">
+          <p class="lg:text-5xl lg:font-black lg:w-10/12 mx-auto text-4xl font-bold   ">
+           Unlimited movies, TV shows and more
+          </p>
+          <p class="mt-8 text-xl font-medium mx-auto ">
+            Watch anywhere. Cancel anytime.
+          </p>
+          <p class="my-4 text-xl mx-auto">
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </p>
+          <div class="text-center columns-2  ms-28 mx-auto mt-[25px]">
+            <div class="text-end h-auto">
+              <input
+                class="h-8 w-80 ps-4 bg-[black] border border-teal-600 py-6 w-2/4"
+                type="email"
+                placeholder="Email address"
+              />
+            </div>
+            <div class="text-start w-auto text-2xl mb-0.5 h-auto">
+              <button class="bg-[red] text-[white] w-auto rounded py-2.5 px-6">
+                Get Started <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="relative h-auto w-auto bg-[black] columns-2 text-[white] border-t-4 border-b-4 border-gray-800 py-[50px]"
+    >
+      <div class="text-center">
+        <p class="text-5xl pt-40 font-black">Enjoy on your TV</p>
+        <p class="ms-20 text-2xl pt-8 font-semibold w-10/12">
+          Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+          players and more.
+        </p>
+      </div>
+      <div>
+        <img
+          class="relative z-30"
+          src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+          alt=""
+        />
+        <div class="video top-[150px] right-[190px] ">
+          <video class=" video1" width="480" height="300" autoplay muted>
+            <source class="absolute video1"
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+              type="video/mp4"
+            />
+            <source class="video1" src="movie.ogg" type="video/ogg" />
+          </video>
+        </div>
+      </div>
+    </div>
+    <div
+      class="relative h-auto w-auto bg-[black] columns-2 text-[white] border-t-4 border-b-4 border-gray-800"
+    >
+      <div class="text-end ps-36">
+        <img
+          class="h-100 text-end"
+          src="	https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <p class="text-6xl font-black ps-8 pt-[95px]">
+          Download your shows to watch offline
+        </p>
+        <p class="text-xl font-semibold w-11/12 p-8">
+          Save your favourites easily and always have something to watch.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="relative h-auto w-full bg-[black] columns-2 text-[white] border-t-4 border-b-4 border-gray-800"
+    >
+      <div class="ps-28 pt-4">
+        <p class="text-6xl font-black  ps-8 pt-[100px]">Watch everywhere</p>
+        <p class="text-xl font-semibold w-11/12 p-8">
+          Stream unlimited movies and TV shows on your phone, tablet, laptop,
+          and TV.
+        </p>
+      </div>
+      <div>
+        <img
+          class="relative z-30"
+          src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"
+          alt=""
+        />
+        <div class="video top-[50px] right-[250px]">
+          <video class="video1" width="400" height="240" autoplay muted>
+            <source class="video1"
+            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v"
+              type="video/mp4"
+            />
+            <source class="video1" src="movie.ogg" type="video/ogg" />
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="relative h-full w-auto bg-[black] columns-2 text-[white] border-t-4 border-b-4 border-gray-800"
+    >
+      <div class="text-end ps-36">
+        <img
+          class="h-100 text-end"
+          src="	https://occ-0-3217-3646.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d"
+          alt=""
+        />
+      </div>
+      <div>
+        <p class="text-6xl font-black pt-36 w-10/12">
+          Create profiles for kids
+        </p>
+        <p class="text-xl font-semibold pt-8 w-9/12">
+          Send children on adventures with their favourite characters in a space
+          made just for them—free with your membership.
+        </p>
+      </div>
+    </div>
+    <!-- <div class="absolute">
+      <video class="z-10" width="320" height="240" autoplay muted>
+        <source
+          src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+          type="video/mp4"
+        />
+        <source src="movie.ogg" type="video/ogg" />
+      </video>
+    </div> -->
+    <div class="bg-[black] text-[white]  text-start">
+    <div class="h-auto ">
+    <div class="p-5 flex justify-center  ">
+      <div class="flex justify-center my-2">
+        <div class="max-w-[1200px] mx-auto text-center ">
+          <h1 class="text-5xl  font-black my-8 text-[white]">Frequently Asked Questions</h1>
+          <ul class="flex flex-col  justify-center ">
+            <li class="w-full  ps-[20px] bg-[#333333] my-2 shadow-lg" x-data="accordion(1)">
+              <h2 
+                 class=" chick flex flex-row justify-between items-center text-xl p-3 cursor-pointer" onclick="handle(0)"
+              >
+                <span>When will my order arrive?</span>
+                
+                 
+                  <i class="text-2xl me-[20px] fa-solid fa-plus h-6 w-6 transform transition-transform duration-500"></i>
+              </h2>
+              <div
+                x-ref="tab"
+             
+                class="cont border-l-2  overflow-hidden h-0 duration-500 transition-all"
+              >
+                <p class="p-3 ">
+                  Shipping time is set by our delivery partners, according to the delivery method chosen by you. Additional details can be found in the order confirmation
+                </p>
+              </div>
+            </li>
+            <li class="bg-[#333333] w-full ps-[20px] my-2 shadow-lg" x-data="accordion(2)">
+              <h2
+                                class="chick flex flex-row justify-between items-center  text-xl p-3 cursor-pointer"
+                                onclick="handle(1)"          >
+                <span>How do I track my order?</span>
+                <i class="text-2xl me-[20px] fa-solid fa-plus h-6 w-6 transform transition-transform duration-500"></i>
+              </h2>
+              <div
+                class=" cont border-l-2  overflow-hidden max-h-0 duration-500 transition-all"
+                x-ref="tab"
+                :style="handleToggle()"
+              >
+                <p class="p-3 ">
+                  Once shipped, you’ll get a confirmation email that includes a tracking number and additional information regarding tracking your order.
+                </p>
+              </div>
+            </li>
+            <li class="bg-[#333333] w-full ps-[20px] my-2 shadow-lg" x-data="accordion(3)">
+              <h2
+              onclick="handle(2)"               class=" chick handu flex flex-row justify-between items-center  text-xl p-3 cursor-pointer"
+              >
+                <span>What’s your return policy?</span>
+                <i class="text-2xl me-[20px] fa-solid fa-plus h-6 w-6 transform transition-transform duration-500"></i>
+              </h2>
+              <div
+                class="cont border-l-2 overflow-hidden max-h-0 duration-500 transition-all"
+                x-ref="tab"
+                :style="handleToggle()"
+              >
+                <p class="pb-4  p-3 ">
+                  We allow the return of all items within 30 days of your original order’s date. If you’re interested in returning your items, send us an email with your order number and we’ll ship a return label.
+                </p>
+              </div>
+            </li>
+            <li class="bg-[#333333] w-full  ps-[20px] my-2 shadow-lg" x-data="accordion(4)">
+              <h2
+              onclick="handle(3)"                class="chick flex flex-row justify-between items-center text-xl p-3 cursor-pointer"
+              >
+                <span>How do I make changes to an existing order?</span>
+                <i class="text-2xl me-[20px] fa-solid fa-plus h-6 w-6 transform transition-transform duration-500"></i>
+              </h2>
+              <div
+                class="cont border-l-2  overflow-hidden max-h-0 duration-500 transition-all"
+                x-ref="tab"
+                :style="handleToggle()"
+              >
+                <p class=" pb-16 mb-4 p-3 ">
+                  Changes to an existing order can be made as long as the order is still in “processing” status. Please contact our team via email and we’ll make sure to apply the needed changes. If your order has already been shipped, we cannot apply any changes to it. If you are unhappy with your order when it arrives, please contact us for any changes you may require.
+                </p>
+              </div>
+            </li>
+            <li class="bg-[#333333] w-full  ps-[20px] my-2 shadow-lg" x-data="accordion(5)">
+              <h2
+              onclick="handle(4)"               class=" chick flex flex-row justify-between items-center text-xl p-3 cursor-pointer"
+              >
+                <span>What shipping options do you have?</span>
+                <i class="text-2xl me-[20px] fa-solid fa-plus h-6 w-6 transform transition-transform duration-500"></i>
+              </h2>
+              <div
+                class="cont border-l-2  overflow-hidden max-h-0 duration-500 transition-all"
+                x-ref="tab"
+                :style="handleToggle()"
+              >
+                <p class="p-3 ">
+                  For USA domestic orders we offer FedEx and USPS shipping.
+                </p>
+              </div>
+            </li>
+            <li class="bg-[#333333] w-full  ps-[20px] my-2 shadow-lg" x-data="accordion(6)">
+              <h2
+              onclick="handle(5)"                 class=" chick handu flex flex-row justify-between items-center  p-3 cursor-pointer text-xl"
+              >
+                <span>What payment methods do you accept?</span>
+                <i class="text-2xl me-[20px] fa-solid fa-plus h-6 w-6 transform transition-transform duration-500"></i>
+              </h2>
+              <div
+                class="cont border-l-2  overflow-hidden max-h-0 duration-500 transition-all"
+                x-ref="tab"
+                :style="handleToggle()"
+              >
+                <p class="p-3 ">
+                  Any method of payments acceptable by you. For example: We accept MasterCard, Visa, American Express, PayPal, JCB Discover, Gift Cards, etc.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center text-xl my-4">
+    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+  </div>
+  <div class="text-center columns-2  ms-28 pb-8">
+    <div class="text-end h-auto">
+      <input
+        class="h-8 w-80 ps-4 bg-[black] border border-teal-600 py-6 w-2/4"
+        type="email"
+        placeholder="Email address"
+      />
+    </div>
+    <div class="text-start w-auto text-2xl mb-0.5 h-auto">
+      <button class="bg-[red] text-[white] w-auto rounded py-2.5 px-6">
+        Get Started <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+        </div>
+      
+
+ 
+
+    <div
+      class="relative h-auto w-full bg-[black] text-[gray] border-t-4 border-gray-800 ps-12 p-8"
+    >
+      Questions? Call <span class="underline-offset-1"> 000-800-919-1694</span>
+      <div class="grid grid-cols-4 pt-8">
+        <ul>
+          <li class="py-2"><a href="">FAQ</a></li>
+          <li class="py-2"><a href=""> Investor Relations</a></li>
+          <li class="py-2"><a href="">Privacy</a></li>
+          <li class="py-2"><a href="">Speed Test</a></li>
+          <li class="py-2">
+            <select
+              name=""
+              id=""
+              class="border border-gray-600 bg-[black] text-[white] h-10 w-32 rounded"
+            >
+              <option value="" class="h-8 w-40">English</option>
+              <option value="">Hindi</option>
+            </select>
+          </li>
+          <li class="py-2">Netflix India</li>
+        </ul>
+
+        <ul>
+          <li class="py-2"><a href="">Help Centre</a></li>
+          <li class="py-2"><a href="">Jobs</a></li>
+          <li class="py-2"><a href="">Cookie Preferences</a></li>
+          <li class="py-2"><a href=""> Legal Notices</a></li>
+        </ul>
+
+        <ul>
+          <li class="py-2"><a href=""> Account</a></li>
+          <li class="py-2"><a href=""> Ways to Watch</a></li>
+          <li class="py-2"><a href=""> Corporate Information</a></li>
+          <li class="py-2">
+            <a
+              href="
+            "
+              >Only on Netflix</a
+            >
+          </li>
+        </ul>
+
+        <ul>
+          <li class="py-2"><a href=""> Media Centre </a></li>
+          <li class="py-2"><a href=""> Terms of Use</a></li>
+          <li class="py-2">
+            <a
+              href="
+    "
+            >
+              Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/a616479151.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var plus = document.querySelectorAll(".fa-plus");
+      var Accordian = document.querySelectorAll(".acc");
+      var content = document.querySelectorAll(".cont");
+      var plus = document.querySelectorAll(".fa-plus");
+      
+      var ddy = document.getElementsByClassName("chick");
+    function handle(index){
+      content[index].classList.toggle("height");
+      plus[index].classList.toggle("fa-xmark");
+
+
+    
+    }
+
+     
+   
+    </script>
+  </body>
+</html>
+<!-- https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v -->
